@@ -1,0 +1,27 @@
+{
+  "name": "phaser-socket.io-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel build ./src/index.html --no-source-maps && cross-env NODE_ENV=production nodemon ./server.js",
+    "dev-server": "nodemon ./server.js",
+    "dev-client": "parcel --port 1337 ./src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "phaser": "^3.22.0",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "sass": "^1.25.0"
+  }
+}
